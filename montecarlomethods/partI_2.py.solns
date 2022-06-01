@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+import numpy.random as npr
+
+rngx=npr.default_rng(seed=555)
+xx=rngx.uniform(size=10)
+
+rngy=npr.default_rng(seed=555)
+yy=rngy.uniform(size=10)
+
+plt.clf()
+plt.plot(xx,yy,'g*')
+plt.xlabel('x')
+plt.ylabel('y')
+plt.show()

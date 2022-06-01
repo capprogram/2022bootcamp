@@ -1,0 +1,5 @@
+# starting with uu from previous cell, generated with sigma = 1
+limval= 1. # set to value of interest, 1 or 2
+fractinrange = np.size(np.where(abs(uu) <= limval))/np.size(uu)
+print(fractinrange)
+

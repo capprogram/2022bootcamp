@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import numpy.random as npr
+
+mean, sigma = 0., 1.
+rngu = npr.default_rng()
+uu = rngu.normal(mean,sigma,1000)
+
+# plot histogram
+# histogram plotting methods taken from http://matplotlib.org
+n1, bins1, patches1 = plt.hist(uu,bins=50,density=True,histtype='stepfilled')
+#plt.setp(patches1,'facecolor','g','alpha',0.75) # optional if you wish to change histogram appearance
+
+# overplot expected Gaussian distribution on top of histogram using bins1 as u values-- you will need np.exp and np.sqrt
+gaussfunct= np.exp((-1.*bins1**2)/(2.*sigma**2))/(sigma*np.sqrt(2.*3.14159))
+plt.plot(bins1,gaussfunct,'k--',linewidth=1.5)

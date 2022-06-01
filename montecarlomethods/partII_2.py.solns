@@ -1,0 +1,35 @@
+# get the equation for a Gaussian from the solutions to part I
+
+import numpy.random as npr
+import numpy as np
+
+# modify the code in this cell to complete exercise 2
+# hint: you can get the equation for a Gaussian from part I, exercise 3
+
+import numpy as np
+import numpy.random as npr
+
+sigma=1.
+throws=100 # play with this number -- how many darts are enough?
+
+# throw darts in a box circumscribing the portion of the Gaussian that is of interest
+
+# width is from -sigma to +sigma
+rngx = npr.default_rng()
+xvals=(rngx.uniform(size=throws) * 2.*sigma - 1.*sigma)
+
+# height is from 0 to peak value of Gaussian
+rngy = npr.default_rng()
+yvals=(rngy.uniform(size=throws) / (sigma*np.sqrt(2.*3.14159)))
+
+# determine the boundary of the desired region as a function of x values
+gaussfunct= np.exp((-1.*xvals**2)/(2.*sigma**2))/(sigma*np.sqrt(2.*3.14159))
+
+# count the number of hits
+hits=np.size(np.where(yvals <= gaussfunct))
+
+# compute area = (hits/throws) * rectangle area
+rectarea = 2.* sigma / (sigma*np.sqrt(2.*3.14159))
+area = (hits/throws)*rectarea
+
+print("area is %s" % area)
