@@ -1,1 +1,3 @@
 name: cap-bootcamp-env
+dependencies:
+  - matplotlib
