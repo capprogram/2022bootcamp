@@ -1,7 +1,1 @@
-name: resolve-tutorial-env
-channels:
-  - conda-forge
-dependencies:
-  - matplotlib
-  - numpy
-  - scipy
+name: cap-bootcamp-env
