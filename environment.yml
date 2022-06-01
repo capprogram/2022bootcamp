@@ -1,3 +1,6 @@
-name: cap-bootcamp-env
+name: resolve-tutorial-env
+
 dependencies:
   - matplotlib
+  - numpy
+  - scipy
