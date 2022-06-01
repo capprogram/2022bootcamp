@@ -4,5 +4,4 @@ dependencies:
   - matplotlib
   - numpy
   - scipy
-  - astroML
   - pandas
