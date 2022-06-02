@@ -1,1 +1,8 @@
 name: cap-bootcamp-environment
+dependencies:
+- pip
+- pip:
+  - matplotlib
+  - scipy
+  - astroML
+  - pandas
