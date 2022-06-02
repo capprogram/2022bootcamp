@@ -1,4 +1,4 @@
-name: cap-bootcamp-env
+name: cap-bootcamp-environment
 dependencies:
 - matplotlib
 - numpy
