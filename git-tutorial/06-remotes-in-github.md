@@ -81,7 +81,7 @@ something else if we wanted to, but `origin` is by far the most common choice.
 Once the nickname `origin` is set up, `git push origin master` will push the changes from
 our local repository to the repository on GitHub (but don't type it yet)
 
-You can now push to the respository on github. Note we omit the `-u` in the github instructions because using `-u` assumes you won't change the branches you are pushing/pulling. In fact you will want to use branches to get the full power of git.
+You can now push to the respository on github. Note we omit the `-u` in the github instructions because using `-u` assumes you won't change the branches you are pushing/pulling. In fact you will want to use branches to get the full power of git. You may have an authentification failed error if you haven't created a github personal token. It's an extra factor of security to keep your code private. Follow the steps here if you get an error trying to do the next step: https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token
 
 ```
 $ git push origin master
