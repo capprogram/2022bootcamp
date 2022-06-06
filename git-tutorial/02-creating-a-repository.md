@@ -12,6 +12,10 @@ Assuming Git is configured, we can start using it. Note that Git uses the Bash c
 
   `cd [path]` = will change your current directory into the one called [path], can also put in an absolute path such as /users/documents/[name]
   
+  `rm [file]` = will remove a [file] from the directory.
+  
+  `rm -r [directory]` = will remove a directory and everything below it. This can be a little bit dangerous so be very careful when typing it. The `-r` stands for recursive. (Hint: This may be useful for the end of this page)
+  
   `cd ..` = will send you one directory up
 
   `ls` = list the contents of the current directory
@@ -79,4 +83,4 @@ Why is it a bad idea to do this?
 How can Dracula undo his last `git init`?
 
 WARNING: Do not use "git clean" or "rm * " -- these are very dangerous commands!
-There's just one file you need to delete at this point. (Hint: it starts with ".".)
+There's just one file/directory you need to delete at this point. (Hint: it starts with ".")
