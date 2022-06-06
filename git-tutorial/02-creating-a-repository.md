@@ -82,5 +82,5 @@ git init       # make the moons sub-directory a Git repository
 Why is it a bad idea to do this?
 How can Dracula undo his last `git init`?
 
-WARNING: Do not use "git clean" or "rm * " -- these are very dangerous commands!
+WARNING: Do not use `git clean` or `rm * ` -- these are very dangerous commands!
 There's just one file/directory you need to delete at this point. (Hint: it starts with ".")
