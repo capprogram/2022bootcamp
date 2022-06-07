@@ -111,12 +111,15 @@ Although python can do advanced math, we won't need that, so you should just rem
     ** to-the-power-of
     e times 10-to-the (e.g. 2.e4 = 2. * 10^4)
     abs() absolute value
-    sqrt() square root
-    exp() e^
-    log() natural log or ln
-    log10() ordinary log (opposite of 10^)
-    sin() sine of angle in radians
-    cos() cosine of angle in radians
+
+Furthermore, numpy is a ubiquitious python package that essentially everyone imports at the beginning of their code. You can perform these functions using the numpy package assuming you have done the command `import numpy as np`
+
+    np.sqrt() square root
+    np.exp() e^
+    np.log() natural log or ln
+    np.log10() ordinary log (opposite of 10^)
+    np.sin() sine of angle in radians
+    np.cos() cosine of angle in radians
 
 Note that the operators listed above do math `element-wise`, meaning if you, e.g., multiply two single column arrays, the two first elements will multiply, the two second elements will multiply, the two third elements will multiply, etc. Unlike matlab, python does *not* treat `*` as matrix multiplication for arrays, rather as simple element-wise multiplication.
 
