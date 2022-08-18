@@ -14,7 +14,7 @@ You should be able to install anaconda on your personal computer by simply by go
 
     conda install astropy
     conda install git
-    pip install git+https://github.com/astroML/astroML
+    pip install astroML (or if that doesn't work, pip install git+https://github.com/astroML/astroML)
     pip install pymc3
  
 It may ask you if you want to install packages saying [y]/n. Just press enter or type y and press enter.
