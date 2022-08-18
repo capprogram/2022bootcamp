@@ -19,7 +19,7 @@ You should be able to install anaconda on your personal computer by simply by go
  
 It may ask you if you want to install packages saying [y]/n. Just press enter or type y and press enter.
 
-For MAC users, you should be able to install the packages (astropy, git, astroml, pymc3) by opening anaconda navigator, pressing on the environments tab, changing the drop-down menu that says "installed" to "All", and then searching for each of the four packages. For each one, press on the box near its name and press "Apply" at the bottom-right to install it. 
+For MAC users, you should be able to install the packages (astropy, git, astroml, pymc3) by opening anaconda navigator, pressing on the environments tab, changing the drop-down menu that says "installed" to "All", and then searching for each of the four packages. For each one, press on the box near its name and press "Apply" at the bottom-right to install it. If a package is missing, go to the Mac terminal window and use the command listed for that package in the Windows OS instructions above.
 
 
 
